@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.colored-square {
+  @apply w-[10vw] h-[10vw];
+}
