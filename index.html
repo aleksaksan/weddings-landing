@@ -8,9 +8,11 @@
 </head>
 <body class="font-viaoda-libre-regular">
 
-  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/hor.jpg');">
-    <div class="container mx-auto h-full flex items-center justify-center flex-col">
-      <h1 class="text-white text-4xl font-bold text-center">Добро пожаловать!</h1>
+  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/a1cf7d78-f278-4f06-9372-faa8acfcb899.jpg');">
+    <div class="container mx-auto h-full flex items-center justify-center flex-col" id="welcome">
+      <input class="px-4 py-2 w-full block" id="new-guest" />
+      <button class="py-2 px-4 block text-base text-white bg-black mt-6" id="create-btn">создать ссылку</button>
+      <h1 class="text-white text-4xl font-bold text-center" id="guest"></h1>
       <h4 class="text-white text-2xl font-bold text-center">15 августа 2025</h4>
     </div>
   </section>
@@ -21,15 +23,15 @@
       <p class="text-sm text-center">Мы с огромной радостью приглашаем Вас разделить этот прекрасный день нашей свадьбы</p>
     </div>
   
-    <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/hor.jpg');">
+    <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/d103f6e7-6c12-4c1d-83de-5fd7edd3767e.jpg');">
       <div class="relative container mx-auto h-full flex sm:justify-between lg:justify-around flex-row-reverse">
         <img 
-          src="./src/img/vert.jpg" 
+          src="./src/img/photos/13607b3e-c52f-4c8d-841a-0c69ef437e9d.jpg" 
           alt="Image 2" 
           class="relative h-3/5 w-auto transform translate-y-12 mobile:absolute mobile:right-2"
         />
         <img 
-          src="./src/img/vert.jpg" 
+          src="./src/img/photos/82326871-5650-4362-8574-5abbba096693.jpg" 
           alt="Image 1" 
           class="relative h-3/5 w-auto transform translate-y-1/2 mobile:absolute mobile:left-2"
         />
@@ -44,12 +46,14 @@
 
   <section class="container my-20">
     <h2 class="uppercase text-center text-4xl mb-16">Программа дня</h2>
-    <h4 class="mb-4 text-3xl text-center">16:30 - сбор гостей</h4>
+    <h4 class="mb-4 text-3xl text-center">16:00 - сбор гостей</h4>
     <p class="text-center text-xl">Просим взять с собой хорошее настроение и свои улыбки</p>
-    <h4 class="mb-4 mt-10 text-3xl text-center">17:00 - церемония</h4>
+    <h4 class="mb-4 mt-10 text-3xl text-center">16:30 - церемония</h4>
     <p class="text-center text-xl">Вы станете свидетелями трогательного момента!</p>
     <p class="text-center text-xl">Приготовьте платочки!!!</p>
-    <h4 class="mb-4 mt-10 text-3xl text-center">18:00 - банкет</h4>
+    <h4 class="mb-4 mt-10 text-3xl text-center">17:00 - банкет</h4>
+    <p class="text-center text-xl">Время вкусной еды, танцев и развлечений!</p>
+    <h4 class="mb-4 mt-10 text-3xl text-center">19:00 - тортик!</h4>
     <p class="text-center text-xl">Время вкусной еды, танцев и развлечений!</p>
   </section>
   
@@ -88,6 +92,8 @@
       <button class="py-2 px-4 block text-base text-white bg-black mt-6" type="submit">отправить</button>
     </form>
   </section>
-  <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/hor.jpg');"></div>
+  <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/e99ed20a-1f5b-47a0-b9c4-7a3e4483b54e.jpg');"></div>
+
+  <script src="./src/js/index.js" type="module"></script>
 </body>
 </html>
