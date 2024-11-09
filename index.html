@@ -92,7 +92,18 @@
       <button class="py-2 px-4 block text-base text-white bg-black mt-6" type="submit">отправить</button>
     </form>
   </section>
-  <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/e99ed20a-1f5b-47a0-b9c4-7a3e4483b54e.jpg');"></div>
+
+  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/e99ed20a-1f5b-47a0-b9c4-7a3e4483b54e.jpg');">
+    <div class="container mx-auto h-full flex items-center justify-center flex-col text-white text-center">
+      <h4 class="text-4xl mb-8">До начала осталось</h4>
+      <div id="countdown" class="text-4xl">
+        <span id="days"></span> days 
+        <span id="hours"></span> hours 
+        <span id="minutes"></span> minutes 
+        <span id="seconds"></span> seconds
+      </div>
+    </div>
+  </section>
 
   <script src="./src/js/index.js" type="module"></script>
 </body>
