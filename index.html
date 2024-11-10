@@ -17,8 +17,12 @@
 
   <section>
     <div class="container mx-auto mt-12 mb-8" id="welcome" >
-      <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" />
-      <button class="py-2 px-4 block text-base text-white bg-black mt-6" id="create-btn">создать ссылку</button>
+      <div id="new-guest-container">
+        <label for="guest-input">Введите имена</label>
+        <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" name="guest-input"/>
+        <button class="py-2 px-4 text-base text-white bg-black mt-6" id="create-btn">создать ссылку</button>
+        
+      </div>
       <h2 class="text-3xl text-center mb-4" id="guest">Дорогие гости</h2>
       <p class="text-sm text-center">Мы с огромной радостью приглашаем Вас разделить этот прекрасный день нашей свадьбы</p>
     </div>
