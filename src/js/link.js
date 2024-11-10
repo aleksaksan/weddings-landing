@@ -3,6 +3,7 @@ const createButton = document.getElementById('create-btn');
 const newGuest = document.getElementById('new-guest');
 const newGuestContainer = document.getElementById('new-guest-container');
 
+
 createButton.addEventListener('click', () => {
   const currentURL = window.location.href;
   const url = new URL(currentURL);
@@ -10,9 +11,14 @@ createButton.addEventListener('click', () => {
   
   const label = document.createElement('label');
   label.innerText = `Ссылка скопирована для ${newGuest.value}!`;
+  label.id = "guest-label";
   
   navigator.clipboard.writeText(url.toString())
   .then(() => {
+    const guestLabel = document.getElementById('guest-label');
+    if (guestLabel) {
+      guestLabel.remove();
+    }
     newGuestContainer.appendChild(label);
   })
   .catch(err => {
