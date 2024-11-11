@@ -8,7 +8,7 @@ const sendMessage = async (data) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      // mode: 'cors',
+      mode: 'no-cors',
       body: JSON.stringify(data),
     });
 
