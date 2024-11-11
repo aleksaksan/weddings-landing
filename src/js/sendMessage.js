@@ -1,5 +1,4 @@
-const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbwQJV0ic1ptW06TIzIxikGdV31TRywq7EYJijeoH69_hGVfkaVAsMx7xEEK2OILh7bK9A/exec';
-const token = 'AKfycbwQJV0ic1ptW06TIzIxikGdV31TRywq7EYJijeoH69_hGVfkaVAsMx7xEEK2OILh7bK9A'
+const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbzMPTRSB9XoL4_8B-LrV93py-dxV2x3bpp3Ndp3NnSfDTIAzmbv9TXWTYRe-Nvl0akrrg/exec';
 
 const sendMessage = async (data) => {
   try {
