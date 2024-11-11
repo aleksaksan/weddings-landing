@@ -1,5 +1,5 @@
-const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbxRegZlpW6VAMIJwzTSIRV8b6kTcbU2s1YADoXJvHKQBjoN9VHJaRVNGA5JZR0hBL5b9Q/exec';
-const token = 'AKfycbxRegZlpW6VAMIJwzTSIRV8b6kTcbU2s1YADoXJvHKQBjoN9VHJaRVNGA5JZR0hBL5b9Q'
+const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbwQJV0ic1ptW06TIzIxikGdV31TRywq7EYJijeoH69_hGVfkaVAsMx7xEEK2OILh7bK9A/exec';
+const token = 'AKfycbwQJV0ic1ptW06TIzIxikGdV31TRywq7EYJijeoH69_hGVfkaVAsMx7xEEK2OILh7bK9A'
 
 const sendMessage = async (data) => {
   try {
@@ -8,7 +8,7 @@ const sendMessage = async (data) => {
       headers: {
         'Content-Type': 'application/json',
       },
-      // mode: 'no-cors',
+      // mode: 'cors',
       body: JSON.stringify(data),
     });
 
@@ -16,8 +16,8 @@ const sendMessage = async (data) => {
       throw new Error(`Ошибка HTTP: ${response.status}`);
     }
 
-    const json = await response.json();
-    console.log(json);
+    const text = await response.text();
+    console.log(text);
   } catch (error) {
     console.error('Ошибка:', error);
   }
