@@ -30,5 +30,5 @@ function startCountdown(targetDate) {
   updateCountdown();
 }
 
-const targetDate = new Date('2024-12-31T23:59:59').getTime();
+const targetDate = new Date('2025-06-27T15:59:59').getTime();
 startCountdown(targetDate);

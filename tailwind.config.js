@@ -8,7 +8,8 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        "viaoda-libre-regular": ["Viaoda Libre", "serif"]
+        "viaoda-libre-regular": ["Viaoda Libre", "serif"],
+        caveat: ['Caveat', 'cursive'],
       },
       screens: {
         'mobile': { 'raw': '(max-width: 639px)' },
