@@ -7,6 +7,16 @@ const newGuestContainer = document.getElementById('new-guest-container');
 createButton.addEventListener('click', () => {
   const currentURL = window.location.href;
   const url = new URL(currentURL);
+  if (!newGuest.value.toString().replaceAll(" ", "")) {
+    const label = document.createElement('label');
+    label.innerText = `Вы не заполнили имя для приглашённого!`;
+    if (guestLabel) {
+      guestLabel.remove();
+    }
+    newGuestContainer.appendChild(label);
+    label.id = "guest-label";
+    return;
+  }
   url.searchParams.append('name', newGuest.value);
   
   const label = document.createElement('label');

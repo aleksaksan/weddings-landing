@@ -38,3 +38,9 @@ form.addEventListener('submit', async (e) => {
 
   sendMessage(data);
 });
+
+//TODO сделать радио кнопки:
+// "я точно буду!" "извините не получится!"
+
+//какие напитки предпочитаете?
+//смотри formTODO
