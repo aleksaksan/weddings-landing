@@ -7,4 +7,9 @@
 
 .colored-square {
   @apply w-[10vw] h-[10vw];
+  -webkit-mask: url('./img/svg/brushstroke.svg') no-repeat center;
+    mask: url('./img/svg/brushstroke.svg') no-repeat center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
 }
+

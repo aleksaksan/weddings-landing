@@ -26,7 +26,7 @@
         
       </div>
       <h2 class="text-4xl text-center mb-4" id="guest">Дорогие гости</h2>
-      <p class="text-2xl text-center">Мы с огромной радостью приглашаем Вас разделить этот прекрасный день нашей свадьбы</p>
+      <p class="text-2xl text-center">Мы с огромной радостью приглашаем Вас<br>разделить этот прекрасный день нашей свадьбы!</p>
     </div>
   
     <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/d103f6e7-6c12-4c1d-83de-5fd7edd3767e.jpg');">
@@ -46,7 +46,7 @@
   </section>
 
   <section class="container my-10">
-    <h4 class="text-xl text-center">Наш праздник пройдёт в банкетном зале "Нева панорама" по адресу: Санкт-Петербург, Октябрьская набережная, 17</h4>
+    <h4 class="text-xl text-center">Наш праздник пройдёт в банкетном зале "Нева панорама"<br>по адресу: Санкт-Петербург, Октябрьская набережная, 17</h4>
     <button class="py-1 block text-base text-white bg-black max-w-400:w-full w-[312px] mx-auto mt-6">перейти к карте</button>
   </section>
 
@@ -63,35 +63,112 @@
   
   <section class="container my-20">
     <h2 class="uppercase text-center text-4xl mb-4">Дресс-код</h2>
-    <p class="text-sm text-center">Мы очень ждём и с удовольствием готовимся к нашему празднику!</p>
-    <p class="text-sm text-center">Просим поддержать нас улыбками, а так же красивыми нарядами</p>
+    <p class="text-sm text-center">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Соблюдение дресс-кода желательно, но не обязательно.<br>Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
+    <!-- <p class="text-sm text-center">Просим поддержать нас улыбками, а так же красивыми нарядами</p> -->
     <div class="flex justify-between my-16">
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
-      <div class="colored-square bg-slate-600"></div>
+      <div class="colored-square" style="background-color: #E3DBD3"></div>
+      <div class="colored-square" style="background-color: #E4C6C6"></div>
+      <div class="colored-square" style="background-color: #C8B7C9"></div>
+      <div class="colored-square" style="background-color: #9D7982"></div>
+      <div class="colored-square" style="background-color: #B07C64"></div>
+      <div class="colored-square" style="background-color: #D1A099"></div>
+      <div class="colored-square" style="background-color: #9CB2A5"></div>
+      <div class="colored-square" style="background-color: #9EB8A3"></div>
+      <div class="colored-square" style="background-color: #90846A"></div>
+      <div class="colored-square" style="background-color: #727152"></div>
+      <div class="colored-square" style="background-color: #4B4626"></div>
+      <div class="colored-square" style="background-color: #687D6C"></div>
     </div>
 
     <div class="grid grid-cols-3 gap-1">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/vert.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/vert.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/hor.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/vert.jpg" alt="img">
-      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/hor.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/3f70429f-2e61-4117-973f-70a790c0b343.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/76e0f286-8702-499b-8a3b-c025c8d543fb.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/8fdc5504-cb13-4f76-9dc1-e5a481bb4fe8.jpg" alt="img">
+      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img">
     </div>
   </section>
   
-  <section class="container my-20">
+  <section class="container my-20 items-center flex flex-col">
     <h2 class="uppercase text-center text-4xl mb-4">Анкета</h2>
     <p class="text-sm text-center">Будем очень признательны, если Вы</p>
     <p class="text-sm text-center">сообщите нам о своём решении до 27.05.25</p>
 
-    <form class="my-10" id="send-form" action="#">
-      <h4 class="text-2xl mb-2">Имя и фамилия</h4>
-      <label for="input">Что-то надо ввести:</label>
+    <form class="my-10 w-[50vw] mobile:w-full items-center" id="send-form" action="#">
+      <div class="flex flex-col space-y-4 mb-4">
+        <span>Подтверждаете ли Вы свое присутствие?</span>
+        <label class="flex items-center space-x-3 cursor-pointer">
+          <input type="radio" name="option" value="2" class="hidden peer" />
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+          <span class="text-gray-700">Да, конечно! С радостью!</span>
+        </label>
+        <label class="flex items-center space-x-3 cursor-pointer">
+          <input type="radio" name="option" value="1" class="hidden peer" />
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+          <span class="text-gray-700">Нет, к сожалению, не смогу присутствовать =(</span>
+        </label>
+      </div>
+
+      <div class="flex flex-col space-y-4 mb-4">
+        <span>Что будете есть на второе?</span>
+        <label class="flex items-center space-x-3 cursor-pointer">
+          <input type="radio" name="option" value="1" class="hidden peer" />
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+          <span class="text-gray-700">Блюдо из мяса</span>
+        </label>
+        <label class="flex items-center space-x-3 cursor-pointer">
+          <input type="radio" name="option" value="2" class="hidden peer" />
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+          <span class="text-gray-700">Блюдо из рыбы</span>
+        </label>
+        <label class="flex items-center space-x-3 cursor-pointer">
+          <input type="radio" name="option" value="3" class="hidden peer" />
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
+          <span class="text-gray-700">Вегетарианское блюда</span>
+        </label>
+      </div>
+
+      <div class="flex flex-col space-y-4 mb-4">
+        <span>Какой алкоголь будете пить?</span>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="hidden peer" />
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <span class="text-gray-700">Вино белое</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="hidden peer" />
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <span class="text-gray-700">Вино красное</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="hidden peer" />
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <span class="text-gray-700">Крепкий алкоголь</span>
+        </label>
+        <label class="flex items-center space-x-3">
+          <input type="checkbox" class="hidden peer" />
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+              <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
+            </svg>
+          </div>
+          <span class="text-gray-700">Безалкогольные напитки</span>
+        </label>
+      </div>
+
+      <div class="mb-2">Любые комментарии:</div>
       <textarea
         class="block w-full border border-gray-500 py-2 px-4"
         name="input"
@@ -103,7 +180,7 @@
     </form>
   </section>
 
-  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/last_page_photo.jpg'); background-position: 80%;">
+  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/snapedit_1731945331369.webp'); background-position: 80%;">
     <div class="container mx-auto h-full flex items-center justify-center flex-col text-white text-center">
       <h4 class="text-4xl mb-8">До начала осталось</h4>
       <div id="countdown" class="text-4xl">
