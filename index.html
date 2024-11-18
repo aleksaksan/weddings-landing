@@ -7,11 +7,11 @@
   <link rel="icon" href="./src/img/icon.png" type="image/x-icon">
   <title>Wedding Invitation</title>
 </head>
-<body class="font-caveat">
+<body class="font-caveat text-common-text">
 
   <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/first_page.jpg'); filter: grayscale(0.30);">
     <div class="container mx-auto h-full flex items-center justify-start flex-col pt-[15%]">
-      <h1 class="text-white text-6xl font-bold text-center">Вероника & Владислав</h1>
+      <h1 class="text-white text-6xl font-bold text-center">Вероника<br>&<br>Владислав</h1>
       <h4 class="text-white text-2xl font-bold text-center">27 июня 2025</h4>
       <h4 class="text-white text-2xl font-bold text-center">Город Санкт-Петербург</h4>
     </div>
@@ -22,22 +22,23 @@
       <div id="new-guest-container">
         <label for="guest-input">Введите имена</label>
         <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" name="guest-input"/>
-        <button class="py-2 px-4 text-base text-white bg-black mt-6" id="create-btn">создать ссылку</button>
+        <button class="py-2 px-4 text-base text-white bg-common-text mt-6" id="create-btn">создать ссылку</button>
         
       </div>
       <h2 class="text-4xl text-center mb-4" id="guest">Дорогие гости</h2>
-      <p class="text-2xl text-center">Мы с огромной радостью приглашаем Вас<br>разделить этот прекрасный день нашей свадьбы!</p>
+      <p class="text-2xl text-center">Мы рады сообщить Вам, что 27.06.2025<br>состоится самое главное торжество<br>в нашей жизни - день нашей свадьбы!</p>
+      <p class="text-2xl text-center">Приглашаем Вас разделить с нами радость<br>этого незабываемого дня.</p>
     </div>
   
     <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/d103f6e7-6c12-4c1d-83de-5fd7edd3767e.jpg');">
       <div class="relative container mx-auto h-full flex sm:justify-between lg:justify-around flex-row-reverse">
         <img 
-          src="./src/img/photos/13607b3e-c52f-4c8d-841a-0c69ef437e9d.jpg" 
+          src="./src/img/photos/last_page_photo.jpg" 
           alt="Image 2" 
           class="relative h-3/5 w-auto transform translate-y-12 mobile:absolute mobile:right-2"
         />
         <img 
-          src="./src/img/photos/82326871-5650-4362-8574-5abbba096693.jpg" 
+          src="./src/img/photos/bae15e67-3517-43b0-9288-4c1e95aab9f4.jpg" 
           alt="Image 1" 
           class="relative h-3/5 w-auto transform translate-y-1/2 mobile:absolute mobile:left-2"
         />
@@ -47,7 +48,7 @@
 
   <section class="container my-10">
     <h4 class="text-xl text-center">Наш праздник пройдёт в банкетном зале "Нева панорама"<br>по адресу: Санкт-Петербург, Октябрьская набережная, 17</h4>
-    <button class="py-1 block text-base text-white bg-black max-w-400:w-full w-[312px] mx-auto mt-6">перейти к карте</button>
+    <button class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6">перейти к карте</button>
   </section>
 
   <section class="container my-20">
@@ -81,11 +82,11 @@
     </div>
 
     <div class="grid grid-cols-3 gap-1">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img">
       <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/3f70429f-2e61-4117-973f-70a790c0b343.jpg" alt="img">
       <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/76e0f286-8702-499b-8a3b-c025c8d543fb.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/8fdc5504-cb13-4f76-9dc1-e5a481bb4fe8.jpg" alt="img">
-      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/8fdc5504-cb13-4f76-9dc1-e5a481bb4fe8.jpg" alt="img" style="object-position: 25% 75%;">
+      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img">
     </div>
   </section>
   
@@ -99,13 +100,13 @@
         <span>Подтверждаете ли Вы свое присутствие?</span>
         <label class="flex items-center space-x-3 cursor-pointer">
           <input type="radio" name="option" value="2" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-          <span class="text-gray-700">Да, конечно! С радостью!</span>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <span class="text-common-text">Да, конечно! С радостью!</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer">
           <input type="radio" name="option" value="1" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-          <span class="text-gray-700">Нет, к сожалению, не смогу присутствовать =(</span>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <span class="text-common-text">Нет, к сожалению, не смогу присутствовать =(</span>
         </label>
       </div>
 
@@ -113,18 +114,18 @@
         <span>Что будете есть на второе?</span>
         <label class="flex items-center space-x-3 cursor-pointer">
           <input type="radio" name="option" value="1" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-          <span class="text-gray-700">Блюдо из мяса</span>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <span class="text-common-text">Блюдо из мяса</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer">
           <input type="radio" name="option" value="2" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-          <span class="text-gray-700">Блюдо из рыбы</span>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <span class="text-common-text">Блюдо из рыбы</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer">
           <input type="radio" name="option" value="3" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-blue-500 peer-checked:bg-blue-500"></div>
-          <span class="text-gray-700">Вегетарианское блюда</span>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <span class="text-common-text">Вегетарианское блюда</span>
         </label>
       </div>
 
@@ -132,39 +133,39 @@
         <span>Какой алкоголь будете пить?</span>
         <label class="flex items-center space-x-3">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
             <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
-          <span class="text-gray-700">Вино белое</span>
+          <span class="text-common-text">Вино белое</span>
         </label>
         <label class="flex items-center space-x-3">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
             <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
-          <span class="text-gray-700">Вино красное</span>
+          <span class="text-common-text">Вино красное</span>
         </label>
         <label class="flex items-center space-x-3">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
             <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
-          <span class="text-gray-700">Крепкий алкоголь</span>
+          <span class="text-common-text">Крепкий алкоголь</span>
         </label>
         <label class="flex items-center space-x-3">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-blue-500 peer-checked:border-blue-500 flex items-center justify-center">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
             <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
-          <span class="text-gray-700">Безалкогольные напитки</span>
+          <span class="text-common-text">Безалкогольные напитки</span>
         </label>
       </div>
 
@@ -176,11 +177,11 @@
         placeholder="Введите данные"
         id="message"
         ></textarea>
-      <button class="py-2 px-4 block text-base text-white bg-black mt-6" type="submit">отправить</button>
+      <button class="py-2 px-4 block text-base text-white bg-common-text mt-6" type="submit">отправить</button>
     </form>
   </section>
 
-  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/snapedit_1731945331369.webp'); background-position: 80%;">
+  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/snapedit_1731945331369.webp');">
     <div class="container mx-auto h-full flex items-center justify-center flex-col text-white text-center">
       <h4 class="text-4xl mb-8">До начала осталось</h4>
       <div id="countdown" class="text-4xl">

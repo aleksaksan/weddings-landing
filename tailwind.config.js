@@ -14,7 +14,10 @@ module.exports = {
       screens: {
         'mobile': { 'raw': '(max-width: 639px)' },
         'max-w-400': { 'raw': '(max-width: 400px)' },
-      }
+      },
+      colors: {
+        'common-text': '#4B4626',
+      },
     },
   },
   plugins: [],
