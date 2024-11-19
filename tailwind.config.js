@@ -10,6 +10,7 @@ module.exports = {
       fontFamily: {
         "viaoda-libre-regular": ["Viaoda Libre", "serif"],
         caveat: ['Caveat', 'cursive'],
+        amour: ['Saint Amour Script'],
       },
       screens: {
         'mobile': { 'raw': '(max-width: 639px)' },

@@ -1,6 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap';
 
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Viaoda+Libre&display=swap'); */
+
+@font-face {
+  font-family: 'Saint Amour Script';
+
+  src: url('../assets/fonts/saint_amour_script.eot');
+
+  /* IE 9 Compatibility Mode */
+
+  src: url('../assets/fonts/saint_amour_script.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../assets/fonts/saint_amour_script.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../assets/fonts/saint_amour_script.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../assets/fonts/saint_amour_script.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../assets/fonts/saint_amour_script.svg#saint_amour_script') format('svg');
+
+  /* Chrome < 4, Legacy iOS */
+}
 
 *, ::before, ::after{
   --tw-border-spacing-x: 0;
@@ -606,6 +622,26 @@ video {
   grid-row: span 1 / span 1;
 }
 
+.m-\[-1\]{
+  margin: -1;
+}
+
+.m-\[-1rem\]{
+  margin: -1rem;
+}
+
+.m-\[-2rem\]{
+  margin: -2rem;
+}
+
+.m-\[-4rem\]{
+  margin: -4rem;
+}
+
+.m-\[-3rem\]{
+  margin: -3rem;
+}
+
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -807,11 +843,6 @@ video {
   border-color: rgb(2 6 23 / var(--tw-border-opacity));
 }
 
-.bg-black{
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
-}
-
 .bg-common-text{
   --tw-bg-opacity: 1;
   background-color: rgb(75 70 38 / var(--tw-bg-opacity));
@@ -857,6 +888,10 @@ video {
   font-family: Caveat, cursive;
 }
 
+.font-amour{
+  font-family: Saint Amour Script;
+}
+
 .text-2xl{
   font-size: 1.5rem;
   line-height: 2rem;
@@ -892,12 +927,53 @@ video {
   line-height: 1.75rem;
 }
 
+.text-8xl{
+  font-size: 6rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
 
+.font-normal{
+  font-weight: 400;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
 .uppercase{
   text-transform: uppercase;
+}
+
+.leading-tight{
+  line-height: 1.25;
+}
+
+.leading-none{
+  line-height: 1;
+}
+
+.leading-\[-1\]{
+  line-height: -1;
+}
+
+.leading-\[-1\.2\]{
+  line-height: -1.2;
+}
+
+.leading-\[-3\]{
+  line-height: -3;
+}
+
+.leading-\[-2\]{
+  line-height: -2;
+}
+
+.leading-\[-2rem\]{
+  line-height: -2rem;
 }
 
 .text-common-text{
@@ -922,8 +998,8 @@ video {
 .colored-square{
   height: 10vw;
   width: 10vw;
-  -webkit-mask: url('./img/svg/brushstroke.svg') no-repeat center;
-  mask: url('./img/svg/brushstroke.svg') no-repeat center;
+  -webkit-mask: url('../img/svg/brushstroke.svg') no-repeat center;
+  mask: url('../img/svg/brushstroke.svg') no-repeat center;
   -webkit-mask-size: cover;
   mask-size: cover;
 }
@@ -937,19 +1013,9 @@ video {
   display: block;
 }
 
-.peer:checked ~ .peer-checked\:border-blue-500{
-  --tw-border-opacity: 1;
-  border-color: rgb(59 130 246 / var(--tw-border-opacity));
-}
-
 .peer:checked ~ .peer-checked\:border-black{
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity));
-}
-
-.peer:checked ~ .peer-checked\:bg-blue-500{
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
 .peer:checked ~ .peer-checked\:bg-common-text{

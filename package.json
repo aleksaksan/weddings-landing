@@ -4,7 +4,7 @@
   "description": "this is wedding invention",
   "main": "index.js",
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/main.css -o ./src/index.css --watch"
+    "dev": "npx tailwindcss -i ./src/styles/main.css -o ./src/styles/index.css --watch"
   },
   "author": "aleksan",
   "license": "ISC",

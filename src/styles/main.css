@@ -1,5 +1,6 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Viaoda+Libre&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import 'https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap';
+@import './saint_amour_script.css';
 
 @tailwind base;
 @tailwind components;
@@ -7,8 +8,8 @@
 
 .colored-square {
   @apply w-[10vw] h-[10vw];
-  -webkit-mask: url('./img/svg/brushstroke.svg') no-repeat center;
-    mask: url('./img/svg/brushstroke.svg') no-repeat center;
+  -webkit-mask: url('../img/svg/brushstroke.svg') no-repeat center;
+    mask: url('../img/svg/brushstroke.svg') no-repeat center;
     -webkit-mask-size: cover;
     mask-size: cover;
 }
