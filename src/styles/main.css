@@ -14,3 +14,11 @@
     mask-size: cover;
 }
 
+/* .[class*="copyrights-pane"] {
+	display: none !important;
+}
+
+[class*="ground-pane"] {
+	filter: grayscale(1);
+} */
+

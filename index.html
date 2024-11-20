@@ -54,7 +54,11 @@
 
   <section class="container my-32">
     <h4 class="text-xl text-center mb-10">Наш праздник пройдёт в банкетном зале<br>"Нева панорама"<br>по адресу: Санкт-Петербург,<br>Октябрьская набережная, 17</h4>
-    <button class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6">перейти к карте</button>
+    <div id="map" class="map w-full h-screen"></div>
+    <button
+      class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6"
+      onclick="window.open('https://yandex.ru/maps/?ll=30.485003%2C59.868085&z=15', '_blank')"
+    >перейти к карте</button>
   </section>
 
   <section class="container my-20">
@@ -198,7 +202,7 @@
       </div>
     </div>
   </section>
-
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
   <script src="./src/js/index.js" type="module"></script>
 </body>
 </html>
