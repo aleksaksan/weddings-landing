@@ -10,17 +10,21 @@
 <body class="font-caveat text-common-text">
 
   <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/first_page.jpg'); filter: grayscale(0.30);">
-    <div class="container mx-auto h-full flex items-center justify-start flex-col pt-[15%]">
-      <h1 class="text-white text-8xl text-center font-amour font-normal">Вероника</h1>
-      <h1 class="text-white text-8xl text-center font-amour font-normal m-[-3rem]">и</h1>
-      <h1 class="text-white text-8xl text-center font-amour font-normal">Владислав</h1>
-      <h4 class="text-white text-2xl font-normal text-center">27 июня 2025</h4>
-      <h4 class="text-white text-2xl font-normal text-center">Город Санкт-Петербург</h4>
+    <div class="container mx-auto h-full flex items-center justify-between flex-col p-[15%]">
+      <div>
+        <h1 class="text-white text-9xl text-center font-amour font-normal">Вероника</h1>
+        <h1 class="text-white text-8xl text-center font-amour font-normal mt-[-3rem] mb-[-3rem]">&</h1>
+        <h1 class="text-white text-9xl text-center font-amour font-normal">Владислав</h1>
+      </div>
+      <div>
+        <h4 class="text-white text-2xl font-normal text-center mt-50">27 июня 2025</h4>
+        <h4 class="text-white text-2xl font-normal text-center">Город Санкт-Петербург</h4>
+      </div>
     </div>
   </section>
 
-  <section>
-    <div class="container mx-auto mt-12 mb-8" id="welcome" >
+  <section class="">
+    <div class="container mx-auto mt-32 mb-32" id="welcome">
       <div id="new-guest-container">
         <label for="guest-input">Введите имена</label>
         <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" name="guest-input"/>
@@ -37,26 +41,26 @@
         <img 
           src="./src/img/photos/last_page_photo.jpg" 
           alt="Image 2" 
-          class="relative h-3/5 w-auto transform translate-y-12 mobile:absolute mobile:right-2"
+          class="relative h-3/5 w-auto transform translate-y-12 mobile:absolute mobile:right-2 mobile:h-2/5 mobile:translate-y-0"
         />
         <img 
           src="./src/img/photos/bae15e67-3517-43b0-9288-4c1e95aab9f4.jpg" 
           alt="Image 1" 
-          class="relative h-3/5 w-auto transform translate-y-1/2 mobile:absolute mobile:left-2"
+          class="relative h-3/5 w-auto transform translate-y-1/2 mobile:absolute mobile:left-2 mobile:h-2/5 mobile:translate-y-1/4"
         />
       </div>
     </div>
   </section>
 
-  <section class="container my-10">
-    <h4 class="text-xl text-center">Наш праздник пройдёт в банкетном зале "Нева панорама"<br>по адресу: Санкт-Петербург, Октябрьская набережная, 17</h4>
+  <section class="container my-32">
+    <h4 class="text-xl text-center mb-10">Наш праздник пройдёт в банкетном зале<br>"Нева панорама"<br>по адресу: Санкт-Петербург,<br>Октябрьская набережная, 17</h4>
     <button class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6">перейти к карте</button>
   </section>
 
   <section class="container my-20">
     <h2 class="uppercase text-center text-4xl mb-16">Программа дня</h2>
     <h4 class="mb-4 text-3xl text-center">16:00 - сбор гостей</h4>
-    <p class="text-center text-xl">Просим взять с собой хорошее настроение и свои улыбки</p>
+    <p class="text-center text-xl">Просим взять с собой хорошее настроение<br class="mobile:block hidden">и свои улыбки</p>
     <h4 class="mb-4 mt-10 text-3xl text-center">16:30 - церемония</h4>
     <p class="text-center text-xl">Вы станете свидетелями трогательного момента!</p>
     <p class="text-center text-xl">Приготовьте платочки!!!</p>
@@ -65,10 +69,10 @@
   </section>
   
   <section class="container my-20">
-    <h2 class="uppercase text-center text-4xl mb-4">Дресс-код</h2>
-    <p class="text-sm text-center">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Соблюдение дресс-кода желательно, но не обязательно.<br>Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
+    <h2 class="uppercase text-center text-4xl mb-16 mt-32">Дресс-код</h2>
+    <p class="text-xl text-center mb-16">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Соблюдение дресс-кода желательно, но не обязательно.<br>Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
     <!-- <p class="text-sm text-center">Просим поддержать нас улыбками, а так же красивыми нарядами</p> -->
-    <div class="flex justify-between my-16">
+    <div class="flex justify-between my-6">
       <div class="colored-square" style="background-color: #E3DBD3"></div>
       <div class="colored-square" style="background-color: #E4C6C6"></div>
       <div class="colored-square" style="background-color: #C8B7C9"></div>
@@ -87,15 +91,15 @@
       <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img">
       <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/3f70429f-2e61-4117-973f-70a790c0b343.jpg" alt="img">
       <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/76e0f286-8702-499b-8a3b-c025c8d543fb.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/8fdc5504-cb13-4f76-9dc1-e5a481bb4fe8.jpg" alt="img" style="object-position: 25% 75%;">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/1b42b9e0-ac90-4e6c-823f-28e42f2aeba3.jpg" alt="img">
       <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img">
     </div>
   </section>
   
   <section class="container my-20 items-center flex flex-col">
-    <h2 class="uppercase text-center text-4xl mb-4">Анкета</h2>
-    <p class="text-sm text-center">Будем очень признательны, если Вы</p>
-    <p class="text-sm text-center">сообщите нам о своём решении до 27.05.25</p>
+    <h2 class="uppercase text-center text-4xl mb-4 mt-16">Анкета</h2>
+    <p class="text-xl text-center">Будем очень признательны, если Вы</p>
+    <p class="text-xl text-center">сообщите нам о своём решении до 27.05.25</p>
 
     <form class="my-10 w-[50vw] mobile:w-full items-center" id="send-form" action="#">
       <div class="flex flex-col space-y-4 mb-4">
