@@ -10,7 +10,7 @@ function startCountdown(targetDate) {
     const timeRemaining = targetDate - now;
 
     if (timeRemaining <= 0) {
-      countdownElement.innerHTML = 'Уже началось!!';
+      countdownElement.innerHTML = 'Уже началось!';
       clearInterval(timerInterval);
       return;
     }
@@ -20,10 +20,23 @@ function startCountdown(targetDate) {
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    daysElement.textContent = days;
-    hoursElement.textContent = hours;
-    minutesElement.textContent = minutes;
-    secondsElement.textContent = seconds;
+    // Перевод и скрытие
+    if (days > 0) {
+      daysElement.style.display = 'inline';
+      daysElement.textContent = `${days} дн.`;
+    } else {
+      daysElement.style.display = 'none';
+    }
+
+    if (hours > 0 || days > 0) {
+      hoursElement.style.display = 'inline';
+      hoursElement.textContent = `${hours} ч.`;
+    } else {
+      hoursElement.style.display = 'none';
+    }
+
+    minutesElement.textContent = `${minutes} мин.`;
+    secondsElement.textContent = `${seconds} сек.`;
   }
 
   const timerInterval = setInterval(updateCountdown, 1000);
