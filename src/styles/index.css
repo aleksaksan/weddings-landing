@@ -647,11 +647,6 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.mx-0{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
 .mb-10{
   margin-bottom: 2.5rem;
 }
@@ -728,16 +723,16 @@ video {
   height: 1.5rem;
 }
 
+.h-96{
+  height: 24rem;
+}
+
 .h-full{
   height: 100%;
 }
 
 .h-screen{
   height: 100vh;
-}
-
-.h-96{
-  height: 24rem;
 }
 
 .w-4{
@@ -944,10 +939,6 @@ video {
 
 .font-normal{
   font-weight: 400;
-}
-
-.font-bold{
-  font-weight: 700;
 }
 
 .uppercase{
