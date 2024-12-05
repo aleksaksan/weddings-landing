@@ -107,73 +107,76 @@
     <form class="my-10 w-[50vw] mobile:w-full items-center" id="send-form" action="#">
       <div class="flex flex-col space-y-4 mb-4">
         <span>Подтверждаете ли Вы свое присутствие?</span>
-        <label class="flex items-center space-x-3 cursor-pointer">
+        <label class="flex items-center space-x-3 cursor-pointer group">
           <input type="radio" name="isWill" value="2" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
           <span class="text-common-text">Да, конечно! С радостью!</span>
         </label>
-        <label class="flex items-center space-x-3 cursor-pointer">
+        <label class="flex items-center space-x-3 cursor-pointer group">
           <input type="radio" name="isWill" value="1" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
           <span class="text-common-text">Нет, к сожалению, не смогу присутствовать =(</span>
         </label>
       </div>
 
       <div class="flex flex-col space-y-4 mb-4">
         <span>Что будете есть на второе?</span>
-        <label class="flex items-center space-x-3 cursor-pointer">
+        <label class="flex items-center space-x-3 cursor-pointer group">
           <input type="radio" name="food" value="1" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
           <span class="text-common-text">Блюдо из мяса</span>
         </label>
-        <label class="flex items-center space-x-3 cursor-pointer">
+        <label class="flex items-center space-x-3 cursor-pointer group">
           <input type="radio" name="food" value="2" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
           <span class="text-common-text">Блюдо из рыбы</span>
         </label>
-        <label class="flex items-center space-x-3 cursor-pointer">
+        <label class="flex items-center space-x-3 cursor-pointer group">
           <input type="radio" name="food" value="3" class="hidden peer" />
-          <div class="w-6 h-6 rounded-full border-2 border-gray-300 hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
+          <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 peer-checked:border-black peer-checked:bg-common-text"></div>
           <span class="text-common-text">Вегетарианское блюда</span>
         </label>
       </div>
 
       <div class="flex flex-col space-y-4 mb-4">
         <span>Какой алкоголь будете пить?</span>
-        <label class="flex items-center space-x-3">
+        <label class="flex items-center space-x-3 group cursor-pointer">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
-            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center group-hover:border-blue-300">
+            <svg class="hidden w-4 h-4 text-common-text peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
           <span class="text-common-text">Вино белое</span>
         </label>
-        <label class="flex items-center space-x-3">
+        <label class="flex items-center space-x-3 group cursor-pointer">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
-            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center group-hover:border-blue-300">
+            <svg class="hidden w-4 h-4 text-common-text peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
           <span class="text-common-text">Вино красное</span>
         </label>
-        <label class="flex items-center space-x-3">
+        <label class="flex items-center space-x-3 group cursor-pointer">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
-            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center group-hover:border-blue-300">
+            <svg class="hidden w-4 h-4 text-common-text peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
               <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
             </svg>
           </div>
           <span class="text-common-text">Крепкий алкоголь</span>
         </label>
-        <label class="flex items-center space-x-3">
+        <label class="flex items-center space-x-3 group cursor-pointer">
           <input type="checkbox" class="hidden peer" />
-          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:bg-common-text peer-checked:border-black flex items-center justify-center">
-            <svg class="hidden w-4 h-4 text-white peer-checked:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-              <path fill-rule="evenodd" d="M20.292 5.292a1 1 0 00-1.414 0L9 15.172l-3.586-3.586a1 1 0 00-1.414 1.414l4 4a1 1 0 001.414 0l11-11a1 1 0 000-1.414z" clip-rule="evenodd" />
-            </svg>
+          <div class="w-6 h-6 rounded border-2 border-gray-300 peer-checked:border-common-text flex items-center justify-center group-hover:border-blue-300">
+            <div class="w-4 h-4 hidden peer-checked:block bg-common-text"></div>
           </div>
+          <span class="text-common-text">Безалкогольные напитки</span>
+        </label>
+        <label class="flex items-center space-x-3 group cursor-pointer">
+          <input checked id="teal-checkbox" type="checkbox" value="" class="w-4 h-4 text-teal-600 bg-gray-100 border-gray-300 rounded focus:ring-teal-500 dark:focus:ring-teal-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="teal-checkbox" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Teal</label>
           <span class="text-common-text">Безалкогольные напитки</span>
         </label>
       </div>
