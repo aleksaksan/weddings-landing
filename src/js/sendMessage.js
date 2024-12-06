@@ -1,4 +1,4 @@
-const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbzMPTRSB9XoL4_8B-LrV93py-dxV2x3bpp3Ndp3NnSfDTIAzmbv9TXWTYRe-Nvl0akrrg/exec';
+const googleSheetsUrl = 'https://script.google.com/macros/s/AKfycbxnw_vTsIqnhe4sAw1teh5pPh_Q_K2e_lvvL9epr3XYeyxCcg7GeX--1KOXZEzFUp4m/exec';
 
 const sendMessage = async (data) => {
   try {
@@ -26,21 +26,23 @@ const form = document.getElementById('send-form');
 
 form.addEventListener('submit', async (e) => {
   e.preventDefault();
-  const message = document.getElementById('message').value;
+  const message = document.getElementById('message')?.value;
   const urlParams = new URLSearchParams(window.location.search);
   const name = urlParams.get('name');
+  
+  const isWill = form.querySelector('input[name=isWill]:checked')?.value;
+  const food = form.querySelector('input[name=food]:checked')?.value;
+
+  const drinks = [...form.querySelectorAll('input[name=drink]:checked')].map(input => input.value).join('; ');
 
   const data = {
     name: name,
-    isWill: true,
+    isWill: isWill,
+    food: food,
+    drink: drinks,
     message: message,
   };
-
+  
   sendMessage(data);
 });
 
-//TODO сделать радио кнопки:
-// "я точно буду!" "извините не получится!"
-
-//какие напитки предпочитаете?
-//смотри formTODO

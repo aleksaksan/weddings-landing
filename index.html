@@ -35,21 +35,6 @@
       <p class="text-2xl text-center">Мы рады сообщить Вам, что 27.06.2025<br>состоится самое главное торжество<br>в нашей жизни - день нашей свадьбы!</p>
       <p class="text-2xl text-center">Приглашаем Вас разделить<br>с нами радость<br>этого незабываемого дня.</p>
     </div>
-  
-    <!-- <div class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/d103f6e7-6c12-4c1d-83de-5fd7edd3767e.jpg');">
-      <div class="relative container mx-auto h-full flex sm:justify-between lg:justify-around flex-row-reverse">
-        <img 
-          src="./src/img/photos/last_page_photo.jpg" 
-          alt="Image 2" 
-          class="relative h-3/5 w-auto transform translate-y-12 mobile:absolute mobile:right-2 mobile:h-2/5 mobile:translate-y-0"
-        />
-        <img 
-          src="./src/img/photos/bae15e67-3517-43b0-9288-4c1e95aab9f4.jpg" 
-          alt="Image 1" 
-          class="relative h-3/5 w-auto transform translate-y-1/2 mobile:absolute mobile:left-2 mobile:h-2/5 mobile:translate-y-1/4"
-        />
-      </div>
-    </div> -->
   </section>
 
   <section class="container my-32">
@@ -116,7 +101,6 @@
   <section class="container my-20">
     <h2 class="uppercase text-center text-4xl mb-16 mt-32">Дресс-код</h2>
     <p class="text-xl text-center mb-16">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
-    <!-- <p class="text-sm text-center">Просим поддержать нас улыбками, а так же красивыми нарядами</p> -->
     <div class="flex justify-between my-6">
       <div class="colored-square" style="background-color: #E4C6C6"></div>
       <div class="colored-square" style="background-color: #C8B7C9"></div>
@@ -149,14 +133,14 @@
       <div class="flex flex-col space-y-4 mb-4">
         <span>Подтверждаете ли Вы свое присутствие?</span>
         <label class="flex items-center space-x-3 cursor-pointer group">
-          <input type="radio" name="isWill" value="2" class="hidden peer" />
+          <input type="radio" name="isWill" value="Да" class="hidden peer" />
           <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 flex items-center justify-center peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-full"></div>
           </div>
           <span class="text-common-text">Да, конечно! С радостью!</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer group">
-          <input type="radio" name="isWill" value="1" class="hidden peer" />
+          <input type="radio" name="isWill" value="НЕТ" class="hidden peer" />
           <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 flex items-center justify-center peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-full"></div>
           </div>
@@ -167,21 +151,21 @@
       <div class="flex flex-col space-y-4 mb-4">
         <span>Что будете есть на второе?</span>
         <label class="flex items-center space-x-3 cursor-pointer group">
-          <input type="radio" name="food" value="1" class="hidden peer" />
+          <input type="radio" name="food" value="Блюдо из мяса" class="hidden peer" />
           <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 flex items-center justify-center peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-full"></div>
           </div>
           <span class="text-common-text">Блюдо из мяса</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer group">
-          <input type="radio" name="food" value="2" class="hidden peer" />
+          <input type="radio" name="food" value="Блюдо из рыбы" class="hidden peer" />
           <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 flex items-center justify-center peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-full"></div>
           </div>
           <span class="text-common-text">Блюдо из рыбы</span>
         </label>
         <label class="flex items-center space-x-3 cursor-pointer group">
-          <input type="radio" name="food" value="3" class="hidden peer" />
+          <input type="radio" name="food" value="Вегетарианское блюда" class="hidden peer" />
           <div class="w-6 h-6 rounded-full border-2 border-gray-300 group-hover:border-blue-300 flex items-center justify-center peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-full"></div>
           </div>
@@ -192,28 +176,28 @@
       <div class="flex flex-col space-y-4 mb-4">
         <span>Какой алкоголь будете пить?</span>
         <label class="flex items-center space-x-3 group cursor-pointer">
-          <input type="checkbox" class="hidden peer" />
+          <input type="checkbox" name="drink" class="hidden peer" value="Вино белое"/>
           <div class="w-6 h-6 rounded border-2 border-gray-300 flex items-center justify-center group-hover:border-blue-300 peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-sm"></div>
           </div>
           <span class="text-common-text">Вино белое</span>
         </label>
         <label class="flex items-center space-x-3 group cursor-pointer">
-          <input type="checkbox" class="hidden peer" />
+          <input type="checkbox" name="drink" class="hidden peer" value="Вино красное" />
           <div class="w-6 h-6 rounded border-2 border-gray-300 flex items-center justify-center group-hover:border-blue-300 peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-sm"></div>
           </div>
           <span class="text-common-text">Вино красное</span>
         </label>
         <label class="flex items-center space-x-3 group cursor-pointer">
-          <input type="checkbox" class="hidden peer" />
+          <input type="checkbox" name="drink" class="hidden peer" value="Крепкий алкоголь"/>
           <div class="w-6 h-6 rounded border-2 border-gray-300 flex items-center justify-center group-hover:border-blue-300 peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-sm"></div>
           </div>
           <span class="text-common-text">Крепкий алкоголь</span>
         </label>
         <label class="flex items-center space-x-3 group cursor-pointer">
-          <input type="checkbox" class="hidden peer" />
+          <input type="checkbox" name="drink" class="hidden peer" value="Безалкогольные напитки"/>
           <div class="w-6 h-6 rounded border-2 border-gray-300 flex items-center justify-center group-hover:border-blue-300 peer-checked:*:block">
             <div class="w-4 h-4 hidden bg-common-text rounded-sm"></div>
           </div>
@@ -224,7 +208,7 @@
       <div class="mb-2">Любые комментарии:</div>
       <textarea
         class="block w-full border border-gray-500 py-2 px-4"
-        name="input"
+        name="message"
         rows="5"
         placeholder="Введите данные"
         id="message"
