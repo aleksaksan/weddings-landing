@@ -813,8 +813,16 @@ video {
   flex-direction: column;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -839,6 +847,14 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
+}
+
+.text-nowrap{
+  text-wrap: nowrap;
 }
 
 .rounded{
@@ -931,6 +947,14 @@ video {
 
 .text-end{
   text-align: end;
+}
+
+.align-bottom{
+  vertical-align: bottom;
+}
+
+.align-text-bottom{
+  vertical-align: text-bottom;
 }
 
 .font-amour{
@@ -1036,6 +1060,16 @@ video {
 
   .mobile\:w-full{
     width: 100%;
+  }
+
+  .mobile\:text-xl{
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .mobile\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 }
 
