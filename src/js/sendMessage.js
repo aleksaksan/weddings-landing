@@ -44,5 +44,9 @@ form.addEventListener('submit', async (e) => {
   };
   
   sendMessage(data);
+  const submitBtn = form.getElementsByTagName('button')[0];
+  submitBtn.textContent = "данные анкеты отправлены";
+  submitBtn.disabled = true;
+  submitBtn.style.opacity = "70%";
 });
 
