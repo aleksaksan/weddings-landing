@@ -18,6 +18,8 @@ module.exports = {
       },
       colors: {
         'common-text': '#4B4626',
+        'hover-bg': '#776f3d',
+        'active-bg': '#494527',
       },
     },
   },

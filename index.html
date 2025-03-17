@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/styles/index.css">
   <link rel="icon" href="./src/img/icon.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Wedding Invitation</title>
 </head>
 <body class="font-caveat text-common-text">
@@ -12,11 +13,11 @@
   <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/ac8c1e62-274c-40a4-a933-3a4ef6a2e20f.jpg'); filter: grayscale(0.30);">
     <div class="container mx-auto h-full flex items-center justify-between flex-col p-[15%]">
       <div>
-        <h1 class="text-white text-9xl text-center font-amour font-normal">Вероника</h1>
-        <h1 class="text-white text-8xl text-center font-amour font-normal mt-[-3rem] mb-[-3rem]">&</h1>
-        <h1 class="text-white text-9xl text-center font-amour font-normal">Владислав</h1>
+        <h1 class="text-white text-9xl text-center font-amour font-normal"  data-aos="fade-right">Вероника</h1>
+        <h1 class="text-white text-8xl text-center font-amour font-normal mt-[-3rem] mb-[-3rem]"  data-aos="fade">&</h1>
+        <h1 class="text-white text-9xl text-center font-amour font-normal"  data-aos="fade-left">Владислав</h1>
       </div>
-      <div>
+      <div  data-aos="fade">
         <h4 class="text-white text-2xl font-normal text-center mt-50">27 июня 2025</h4>
         <h4 class="text-white text-2xl font-normal text-center">Город Санкт-Петербург</h4>
       </div>
@@ -27,32 +28,32 @@
     <div class="container mx-auto mt-32 mb-32" id="welcome">
       <div id="new-guest-container">
         <label for="guest-input">Введите имена</label>
-        <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" name="guest-input"/>
+        <input class="px-4 py-2 w-full block border border-slate-950" id="new-guest" name="guest-input"  data-aos="fade"/>
         <button class="py-2 px-4 text-base text-white bg-common-text mt-6" id="create-btn">создать ссылку</button>
         
       </div>
-      <h2 class="text-4xl text-center mb-4" id="guest">Дорогие гости</h2>
-      <p class="text-2xl text-center">Мы рады сообщить Вам, что 27.06.2025<br>состоится самое главное торжество<br>в нашей жизни - день нашей свадьбы!</p>
-      <p class="text-2xl text-center">Приглашаем Вас разделить<br>с нами радость<br>этого незабываемого дня.</p>
+      <h2 class="text-4xl text-center mb-4" id="guest" data-aos="fade-up">Дорогие гости</h2>
+      <p class="text-2xl text-center" data-aos="fade-up">Мы рады сообщить Вам, что 27.06.2025<br>состоится самое главное торжество<br>в нашей жизни - день нашей свадьбы!</p>
+      <p class="text-2xl text-center" data-aos="fade-up">Приглашаем Вас разделить<br>с нами радость<br>этого незабываемого дня.</p>
     </div>
   </section>
 
   <section class="container my-32">
-    <h4 class="text-2xl text-center mb-10">Наш праздник пройдёт в банкетном зале<br>"Нева панорама"<br>по адресу: Санкт-Петербург,<br>Октябрьская набережная, 17</h4>
-    <div id="map" class="map w-full h-96"></div>
+    <h4 class="text-2xl text-center mb-10" data-aos="fade-up">Наш праздник пройдёт в банкетном зале<br>"Нева панорама"<br>по адресу: Санкт-Петербург,<br>Октябрьская набережная, 17</h4>
+    <div id="map" class="map w-full h-96" data-aos="fade"></div>
     <a
-      class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6 text-center"
+      class="py-1 block text-base text-white bg-common-text max-w-400:w-full w-[312px] mx-auto mt-6 text-center hover:bg-hover-bg ease-in transition-all active:bg-active-bg"
       href="https://yandex.ru/maps/?rtext=~59.868085,30.485003&rtt=auto" 
     >перейти к карте</a>
   </section>
 
   <section class="container my-20">
-    <h2 class="uppercase text-center text-4xl mb-16">Программа дня</h2>
-    <h4 class="mb-4 text-3xl text-center">16:00
+    <h2 class="uppercase text-center text-4xl mb-16" data-aos="fade-up">Программа дня</h2>
+    <h4 class="mb-4 text-3xl text-center"  data-aos="fade-up">16:00
       <svg class="fill-common-text inline-block" fill="#000000" width="46px" height="46px" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"><path d="M3.5 11c-.257 0-.466.193-.492.45L1.01 28.44c-.104.886.67 1.56 1.496 1.56h24.988c.825 0 1.6-.674 1.496-1.56l-1.998-16.99c-.078-.664-1.072-.546-.994.116l2 16.993c.025.214-.22.44-.504.44H2.506c-.283 0-.53-.226-.504-.44l2-16.994c.04-.3-.2-.565-.502-.566zM15 4c-2.203 0-4 1.797-4 4 0 2.203 1.797 4 4 4 2.203 0 4-1.797 4-4 0-2.203-1.797-4-4-4zm0 1c1.663 0 3 1.337 3 3s-1.337 3-3 3-3-1.337-3-3 1.337-3 3-3zm0-5c-4.412 0-8 3.588-8 8 0 3.175 1.623 6.603 3.38 9.275.877 1.337 1.79 2.48 2.577 3.305.393.412.75.743 1.072.984.32.242.56.436.97.436.41 0 .65-.194.97-.436.322-.24.68-.572 1.073-.984.786-.824 1.7-1.968 2.578-3.305C21.378 14.603 23 11.175 23 8c0-4.412-3.588-8-8-8zm0 1c3.872 0 7 3.128 7 7 0 2.825-1.522 6.147-3.215 8.725-.846 1.288-1.733 2.394-2.467 3.164-.366.383-.697.686-.95.878-.305.223-.495.184-.735 0-.254-.192-.585-.495-.95-.88-.735-.77-1.622-1.875-2.468-3.163C9.522 14.147 8 10.825 8 8c0-3.872 3.128-7 7-7z"/></svg>
     сбор гостей</h4>
-    <p class="text-center text-xl">Просим взять с собой хорошее настроение<br class="mobile:block hidden">и свои улыбки</p>
-    <h4 class="mb-4 mt-10 text-3xl text-center">16:30
+    <p class="text-center text-xl" data-aos="fade-up">Просим взять с собой хорошее настроение<br class="mobile:block hidden">и свои улыбки</p>
+    <h4 class="mb-4 mt-10 text-3xl text-center" data-aos="fade-up">16:30
       <svg class="fill-common-text inline-block" width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
         <title>Hearts</title>
         <desc>Created with Sketch.</desc>
@@ -68,9 +69,9 @@
         </g>
       </svg>
       церемония</h4>
-    <p class="text-center text-xl">Вы станете свидетелями трогательного момента!</p>
-    <p class="text-center text-xl">Приготовьте платочки!!!</p>
-    <h4 class="mb-4 mt-10 text-3xl text-center">17:00
+    <p class="text-center text-xl" data-aos="fade-up">Вы станете свидетелями трогательного момента!</p>
+    <p class="text-center text-xl" data-aos="fade-up">Приготовьте платочки!!!</p>
+    <h4 class="mb-4 mt-10 text-3xl text-center" data-aos="fade-up">17:00
       <svg class="fill-common-text inline-block w-[60px] h-[60px]" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 100.354 100.352" style="enable-background:new 0 0 100.354 100.352;" xml:space="preserve">
       <g>
@@ -95,41 +96,44 @@
       </g>
       </svg>
       банкет</h4>
-    <p class="text-center text-xl">Время вкусной еды, танцев и развлечений!</p>
+    <p class="text-center text-xl" data-aos="fade-up">Время вкусной еды, танцев и развлечений!</p>
   </section>
   
   <section class="container my-20">
-    <h2 class="uppercase text-center text-4xl mb-16 mt-32">Дресс-код</h2>
-    <p class="text-xl text-center mb-16">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
+    <h2 class="uppercase text-center text-4xl mb-16 mt-32" data-aos="fade-up">Дресс-код</h2>
+    <h3 class="uppercase text-center text-4xl mb-16 mt-32" data-aos="fade-up">Для дам:</h3>
+    <p class="text-xl text-center mb-16" data-aos="fade-up">Поддержите нас Вашими улыбками и объятиями,<br>а также красивыми нарядами в палитре торжества<br>(Вы можете поддержать нас не только в представленной палитре,<br>но и в любых других пастельных цветах)</p>
     <div class="flex justify-between my-6">
-      <div class="colored-square" style="background-color: #E4C6C6"></div>
-      <div class="colored-square" style="background-color: #C8B7C9"></div>
-      <div class="colored-square" style="background-color: #9D7982"></div>
-      <div class="colored-square" style="background-color: #B07C64"></div>
-      <div class="colored-square" style="background-color: #D1A099"></div>
-      <div class="colored-square" style="background-color: #9CB2A5"></div>
-      <div class="colored-square" style="background-color: #9EB8A3"></div>
-      <div class="colored-square" style="background-color: #90846A"></div>
-      <div class="colored-square" style="background-color: #727152"></div>
-      <div class="colored-square" style="background-color: #4B4626"></div>
-      <div class="colored-square" style="background-color: #687D6C"></div>
+      <div class="colored-square" style="background-color: #E4C6C6" data-aos="fade"  data-aos-delay="0"></div>
+      <div class="colored-square" style="background-color: #C8B7C9" data-aos="fade"  data-aos-delay="50"></div>
+      <div class="colored-square" style="background-color: #9D7982" data-aos="fade"  data-aos-delay="100"></div>
+      <div class="colored-square" style="background-color: #B07C64" data-aos="fade"  data-aos-delay="150"></div>
+      <div class="colored-square" style="background-color: #D1A099" data-aos="fade"  data-aos-delay="200"></div>
+      <div class="colored-square" style="background-color: #9CB2A5" data-aos="fade"  data-aos-delay="250"></div>
+      <div class="colored-square" style="background-color: #9EB8A3" data-aos="fade"  data-aos-delay="300"></div>
+      <div class="colored-square" style="background-color: #90846A" data-aos="fade"  data-aos-delay="350"></div>
+      <div class="colored-square" style="background-color: #727152" data-aos="fade"  data-aos-delay="400"></div>
+      <div class="colored-square" style="background-color: #4B4626" data-aos="fade"  data-aos-delay="450"></div>
+      <div class="colored-square" style="background-color: #687D6C" data-aos="fade"  data-aos-delay="500"></div>
     </div>
 
     <div class="grid grid-cols-3 gap-1">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/3f70429f-2e61-4117-973f-70a790c0b343.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/5364097781574264958.jpg" alt="img">
-      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/5364097781574264959.jpg" alt="img">
-      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/10ac6723-16f0-42a7-981f-fab4575d7362.jpg" alt="img" data-aos="fade"  data-aos-delay="0">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/3f70429f-2e61-4117-973f-70a790c0b343.jpg" alt="img" data-aos="fade"  data-aos-delay="50">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/5364097781574264958.jpg" alt="img" data-aos="fade"  data-aos-delay="100">
+      <img class="row-span-1 object-cover w-full h-full" src="./src/img/palette/5364097781574264959.jpg" alt="img" data-aos="fade"  data-aos-delay="0">
+      <img class="col-span-2 row-span-1 object-cover w-full h-full" src="./src/img/palette/d9f26321-90ac-427b-b9b1-2324ceed820d.jpg" alt="img" data-aos="fade"  data-aos-delay="50">
     </div>
+    <h3 class="uppercase text-center text-4xl mb-16 mt-32" data-aos="fade-up">Для джентельменов:</h3>
+    <p class="text-xl text-center mb-16" data-aos="fade-up">Предпочтительно классический костюм в нейтральных тонах: сером, чёрном, белом или коричневом.</p>
   </section>
   
   <section class="container my-20 items-center flex flex-col">
-    <h2 class="uppercase text-center text-4xl mb-4 mt-16">Анкета</h2>
-    <p class="text-xl text-center">Будем очень признательны, если Вы</p>
-    <p class="text-xl text-center">сообщите нам о своём решении до 27.04.2025</p>
+    <h2 class="uppercase text-center text-4xl mb-4 mt-16"  data-aos="fade" >Анкета</h2>
+    <p class="text-xl text-center" data-aos="fade" >Будем очень признательны, если Вы</p>
+    <p class="text-xl text-center" data-aos="fade" >сообщите нам о своём решении до 27.04.2025</p>
 
-    <form class="my-10 w-[50vw] mobile:w-full items-center" id="send-form" action="#">
+    <form class="my-10 w-[50vw] mobile:w-full items-center" id="send-form" action="#"  data-aos="fade" data-aos-duration="1000">
       <div class="flex flex-col space-y-4 mb-4">
         <span>Подтверждаете ли Вы свое присутствие?</span>
         <label class="flex items-center space-x-3 cursor-pointer group">
@@ -213,23 +217,23 @@
         placeholder="Введите данные"
         id="message"
         ></textarea>
-      <button class="py-2 px-4 block text-base text-white bg-common-text mt-6" type="submit">отправить</button>
+      <button class="py-2 px-4 block text-base text-white bg-common-text mt-6 hover:bg-hover-bg active:bg-active-bg ease-in transition-all" type="submit">отправить</button>
     </form>
   </section>
-	<section class="container mt-20 mb-40">
+	<section class="container mt-20 mb-40" data-aos="fade" data-aos-duration="1000">
 		<div class="flex flex-col text-2xl mobile:text-xl w-[50vw] mx-auto mobile:w-full">
 			<span class="text-2xl mb-2">
 				Вы можете связаться с нами:
 			</span>
 			<div>
-				<div class="flex justify-between"><span class="">Жених:</span><a class="text-end" href="tel:+7(963)331-30-07">+7(963)331-30-07</a></div>
-				<div class="flex justify-between"><span class="">Невеста:</span><a class="text-end" href="tel:+7(981)999-46-93">+7(981)999-46-93</a></div>
-				<div class="flex justify-between items-end"><span>Координатор свадьбы Рамуза:</span><a class="text-end whitespace-nowrap" href="tel:+7(915)454-54-42">+7(915)454-54-42</a></div>
+				<div class="flex justify-between"><span class="">Жених:</span><a class="text-end hover:text-hover-bg active:text-active-bg ease-in transition-all" href="tel:+7(963)331-30-07">+7(963)331-30-07</a></div>
+				<div class="flex justify-between"><span class="">Невеста:</span><a class="text-end hover:text-hover-bg active:text-active-bg ease-in transition-all" href="tel:+7(981)999-46-93">+7(981)999-46-93</a></div>
+				<div class="flex justify-between items-end"><span>Координатор свадьбы Рамуза:</span><a class="text-end whitespace-nowrap hover:text-hover-bg active:text-active-bg ease-in transition-all" href="tel:+7(915)454-54-42">+7(915)454-54-42</a></div>
 			</div>
 		</div>
 	</section>
 
-  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/IMG_5455.JPG');">
+  <section class="h-screen bg-cover bg-center" style="background-image: url('./src/img/photos/IMG_5455.JPG');" data-aos="fade" data-aos-duration="1000">
     <div class="mx-auto h-full flex items-center flex-col text-white text-center" style="padding-top: 4rem;">
       <h4 class="text-4xl mb-2">До начала осталось</h4>
       <div id="countdown" class="text-4xl">
@@ -241,6 +245,19 @@
     </div>
   </section>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)    
+
+    delay: 100, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease-out', // default easing for AOS animations
+    once: true, // whether animation should happen only once - while scrolling down
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+  });
+  </script>
   <script src="./src/js/index.js" type="module"></script>
 </body>
 </html>
